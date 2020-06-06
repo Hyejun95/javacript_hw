@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+#wrap {
+  height: 5000px;
+  padding-top: 60px; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+#header {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+  #header .name {
+    font-size: 25px; }
+  #header nav {
+    display: flex;
+    font-size: 20px; }
+    #header nav a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      padding: 0 10px;
+      text-transform: uppercase;
+      cursor: pointer; }
+      #header nav a.hover {
+        color: orange; }
+
+.side-menu {
+  position: fixed;
+  top: 50;
+  bottom: 0;
+  left: -320px;
+  z-index: 1500;
+  width: 320px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  transition: .4s; }
+  .open-side-menu .side-menu {
+    left: 0; }
+  .side-menu h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  .side-menu ul li {
+    padding: 10px 0;
+    text-transform: capitalize; }
+  .side-menu .btn-menu {
+    position: absolute;
+    left: 100%;
+    top: 40px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer; }
+
+.section {
+  padding: 80px 0;
+  height: 100vh; }
+  .section .home .profile {
+    height: 300px;
+    width: 50%;
+    object-fit: cover; }
+  .section .home .profile-info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    z-index: 10; }
+  .section .about {
+    background: #9dcaff; }
+  .section .service {
+    background: #9dcaff; }
+  .section .expertise {
+    background: #9dcaff; }
+  .section .works {
+    background: #9dcaff; }
+  .section .blog {
+    background: #9dcaff; }
+  .section .contact {
+    background: #9dcaff; }
+  .section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+  .section .content {
+    height: 500px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1); }
+
+/*# sourceMappingURL=style.css.map */

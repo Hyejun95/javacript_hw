@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+#wrap {
+  padding-top: 60px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  .name {
+    font-size: 25px;
+  }
+
+  nav {
+    display: flex;
+    font-size: 20px;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 40px;
+      text-transform: uppercase;
+      color: orange;
+      margin: 0 15px;
+      cursor: pointer;
+
+      &:hover {
+        background: #f7f8f9;
+      }
+    }
+  }
+
+  //sidemenu
+  .side-menu {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: -320px;
+    z-index: 1500;
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+
+    .open-side-menu & {
+      left: 0;
+    }
+
+    h1 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      li {
+        padding: 10px 0;
+        text-transform: capitalize;
+      }
+    }
+
+    .btn-menu {
+      position: absolute;
+      left: 100%;
+      top: 40px;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+  }
+
+  .section {
+    padding: 80px 0;
+    height: 100vh;
+
+    .home {
+      .profile {
+        height: 300px;
+        width: 50%;
+        object-fit: cover;
+      }
+
+      .profile-info {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: yellow;
+        z-index: 10;
+      }
+    }
+
+    .about {
+      background: #9dcaff;
+    }
+
+    .service {
+      background: #9dcaff;
+    }
+
+    .expertise {
+      background: #9dcaff;
+    }
+
+    .works {
+      background: #9dcaff;
+    }
+
+    .blog {
+      background: #9dcaff;
+    }
+
+    .contact {
+      background: #5d7795;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .content {
+      height: 500px;
+    }
+  }
+
+
